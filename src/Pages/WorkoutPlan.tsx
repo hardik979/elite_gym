@@ -14,98 +14,220 @@ interface WorkoutPlan {
 
 const WorkoutPage: React.FC = () => {
   const workoutPlan: WorkoutPlan = {
-    "Day 1: Chest & Triceps": [
+    "Chest Workout": [
       {
-        name: "Push Ups",
+        name: "Push-Ups",
         videoUrl: "/pushups.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Incline Barbell Press",
+        videoUrl: "/incline.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Flat Barbell Press",
+        videoUrl: "/barbellchest.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Decline Barbell Press",
+        videoUrl: "/decline.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Pec Dec Fly",
+        videoUrl: "/pec.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+    ],
+    "Triceps Workout": [
+      {
+        name: "Tricep Pushdown",
+        videoUrl: "/tripush.mp4",
         reps: "10-12",
         sets: "3",
       },
       {
-        name: "Chest Press",
-        videoUrl: "/barbellchest.mp4",
-        reps: "4 sets",
-        sets: "8 reps",
+        name: "Bench Dips",
+        videoUrl: "/dips.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Skull Crushers",
+        videoUrl: "/skull.mp4",
+        reps: "8-10",
+        sets: "3",
+      },
+      {
+        name: "Overhead Tricep Extension",
+        videoUrl: "/overhtri.mp4",
+        reps: "10-12",
+        sets: "3",
       },
     ],
-    "Day 2: Back & Biceps": [
+    "Back Workout": [
       {
-        name: "Pull Ups",
-        videoUrl: "/videos/pull_ups.mp4",
+        name: "Close Grip Lat PullDown",
+        videoUrl: "/closelat.mp4",
         reps: "3 sets",
         sets: "8 reps",
       },
       {
-        name: "Barbell Rows",
-        videoUrl: "/videos/barbell_rows.mp4",
-        reps: "4 sets",
-        sets: "10 reps",
+        name: "Wide Grip Lat Pulldown",
+        videoUrl: "/widelat.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Seated Row",
+        videoUrl: "/videos/seated_row.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "T-Bar Row",
+        videoUrl: "/videos/tbar_row.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+
+      {
+        name: "Bent Over Row",
+        videoUrl: "/bentover.mp4",
+        reps: "8-12",
+        sets: "3",
       },
     ],
-    "Day 3: Legs & shoulder": [
+    "Biceps Workout": [
       {
-        name: "Pull Ups",
-        videoUrl: "/videos/pull_ups.mp4",
-        reps: "3 sets",
-        sets: "8 reps",
+        name: "Barbell Curl",
+        videoUrl: "/videos/barbell_curl.mp4",
+        reps: "10-12",
+        sets: "3",
       },
       {
-        name: "Barbell Rows",
-        videoUrl: "/videos/barbell_rows.mp4",
-        reps: "4 sets",
-        sets: "10 reps",
-      },
-    ],
-    "Day 4: chest & Triceps": [
-      {
-        name: "Pull Ups",
-        videoUrl: "/videos/pull_ups.mp4",
-        reps: "3 sets",
-        sets: "8 reps",
+        name: "Hammer Curl",
+        videoUrl: "/videos/hammer_curl.mp4",
+        reps: "10-12",
+        sets: "3",
       },
       {
-        name: "Barbell Rows",
-        videoUrl: "/videos/barbell_rows.mp4",
-        reps: "4 sets",
-        sets: "10 reps",
+        name: "Preacher Curl",
+        videoUrl: "/videos/preacher_curl.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Concentration Curl",
+        videoUrl: "/videos/concentration_curl.mp4",
+        reps: "10-12",
+        sets: "3",
       },
     ],
-    "Day 5: Back & Biceps": [
+    "Legs Workout": [
       {
-        name: "Pull Ups",
-        videoUrl: "/videos/pull_ups.mp4",
-        reps: "3 sets",
-        sets: "8 reps",
+        name: "Leg Press",
+        videoUrl: "/videos/leg_press.mp4",
+        reps: "12-15",
+        sets: "3",
       },
       {
-        name: "Barbell Rows",
-        videoUrl: "/videos/barbell_rows.mp4",
-        reps: "4 sets",
-        sets: "10 reps",
+        name: "Squats",
+        videoUrl: "/videos/squats.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Sumo Squats",
+        videoUrl: "/videos/sumo_squat.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Lunges",
+        videoUrl: "/videos/lunges.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Romanian Deadlifts (RDLs)",
+        videoUrl: "/videos/rdls.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Leg Extensions",
+        videoUrl: "/videos/leg_extension.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Leg Curls",
+        videoUrl: "/videos/leg_curl.mp4",
+        reps: "12-15",
+        sets: "3",
       },
     ],
-    "Day 6: Legs & shoulder": [
+    "Shoulder Workout": [
       {
-        name: "Pull Ups",
-        videoUrl: "/videos/pull_ups.mp4",
-        reps: "3 sets",
-        sets: "8 reps",
+        name: "Shoulder Press",
+        videoUrl: "/videos/shoulder_press.mp4",
+        reps: "10-12",
+        sets: "3",
       },
       {
-        name: "Barbell Rows",
-        videoUrl: "/videos/barbell_rows.mp4",
-        reps: "4 sets",
-        sets: "10 reps",
+        name: "Face Pulls",
+        videoUrl: "/videos/face_pull.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Lateral Raises",
+        videoUrl: "/videos/lateral_raise.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Front Raises",
+        videoUrl: "/videos/front_raise.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Shrugs",
+        videoUrl: "/videos/shrugs.mp4",
+        reps: "15-20",
+        sets: "3",
       },
     ],
-    // Add other days with their respective exercises
+    "Abs Workout": [
+      {
+        name: "Crunches",
+        videoUrl: "/videos/crunches.mp4",
+        reps: "15-20",
+        sets: "3",
+      },
+      {
+        name: "Knee Raises",
+        videoUrl: "/videos/knee_raises.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+    ],
   };
 
-  const [selectedDay, setSelectedDay] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedExercise, setSelectedExercise] = useState<string | null>(null);
 
-  const handleDayClick = (day: string) => {
-    setSelectedDay(selectedDay === day ? null : day);
+  const handleCategoryClick = (category: string) => {
+    setSelectedCategory(selectedCategory === category ? null : category);
   };
 
   const handleExerciseClick = (exerciseName: string) => {
@@ -115,22 +237,22 @@ const WorkoutPage: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container font-montesrrat mx-auto p-4">
       <h1 className="text-4xl font-bold text-center mb-8">Workout Plan</h1>
 
       <div className="space-y-6">
-        {Object.keys(workoutPlan).map((day) => (
-          <div key={day}>
+        {Object.keys(workoutPlan).map((category) => (
+          <div key={category}>
             <button
-              onClick={() => handleDayClick(day)}
-              className="w-full text-left text-2xl font-semibold py-2 px-4 bg-purple-500 text-white rounded-md hover:bg-purple-600"
+              onClick={() => handleCategoryClick(category)}
+              className="w-full text-left text-2xl font-semibold py-2 px-4 bg-purple-600 text-white rounded-md hover:bg-purple-500"
             >
-              {day}
+              {category}
             </button>
 
-            {selectedDay === day && (
+            {selectedCategory === category && (
               <div className="mt-4 space-y-4">
-                {workoutPlan[day].map((exercise, index) => (
+                {workoutPlan[category].map((exercise, index) => (
                   <div
                     key={index}
                     className="flex flex-col space-y-2 p-2 bg-gray-100 rounded-md shadow-sm"
@@ -139,7 +261,7 @@ const WorkoutPage: React.FC = () => {
                       <span className="text-xl">{exercise.name}</span>
                       <button
                         onClick={() => handleExerciseClick(exercise.name)}
-                        className="text-purple-600 hover:underline"
+                        className="text-blue-600 hover:underline"
                       >
                         {selectedExercise === exercise.name
                           ? "Close"

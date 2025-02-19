@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         cinzel: ["cinzel"],
+        montesrrat: ["montserrat"],
       },
     },
   },
