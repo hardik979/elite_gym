@@ -13,7 +13,7 @@ interface WorkoutPlan {
 }
 
 const WorkoutPage: React.FC = () => {
-  const workoutPlan: WorkoutPlan = {
+  const beginnerWorkoutPlan: WorkoutPlan = {
     "Chest Workout": [
       {
         name: "Push-Ups",
@@ -54,8 +54,8 @@ const WorkoutPage: React.FC = () => {
         sets: "3",
       },
       {
-        name: "Bench Dips",
-        videoUrl: "/dips.mp4",
+        name: "Dumbbell Overhead Extensions",
+        videoUrl: "/dumbbeloverheadext.mp4",
         reps: "8-12",
         sets: "3",
       },
@@ -86,14 +86,14 @@ const WorkoutPage: React.FC = () => {
         sets: "3",
       },
       {
-        name: "Seated Row",
-        videoUrl: "/videos/seated_row.mp4",
+        name: "Lat Pull Over",
+        videoUrl: "/lattpulover.mp4",
         reps: "10-12",
         sets: "3",
       },
       {
-        name: "T-Bar Row",
-        videoUrl: "/videos/tbar_row.mp4",
+        name: "dumbell Row",
+        videoUrl: "/barbellbent.mp4",
         reps: "8-12",
         sets: "3",
       },
@@ -107,26 +107,26 @@ const WorkoutPage: React.FC = () => {
     ],
     "Biceps Workout": [
       {
-        name: "Barbell Curl",
-        videoUrl: "/videos/barbell_curl.mp4",
+        name: "Cable Curl",
+        videoUrl: "/cablebic.mp4",
         reps: "10-12",
         sets: "3",
       },
       {
         name: "Hammer Curl",
-        videoUrl: "/videos/hammer_curl.mp4",
+        videoUrl: "/hammer.mp4",
         reps: "10-12",
         sets: "3",
       },
       {
-        name: "Preacher Curl",
-        videoUrl: "/videos/preacher_curl.mp4",
+        name: "barbell Curl",
+        videoUrl: "/barbellcurl.mp4",
         reps: "10-12",
         sets: "3",
       },
       {
-        name: "Concentration Curl",
-        videoUrl: "/videos/concentration_curl.mp4",
+        name: "Dumbbell Curl",
+        videoUrl: "/dumbbelcurl.mp4",
         reps: "10-12",
         sets: "3",
       },
@@ -134,43 +134,25 @@ const WorkoutPage: React.FC = () => {
     "Legs Workout": [
       {
         name: "Leg Press",
-        videoUrl: "/videos/leg_press.mp4",
+        videoUrl: "/legpress.mp4",
         reps: "12-15",
         sets: "3",
       },
       {
         name: "Squats",
-        videoUrl: "/videos/squats.mp4",
-        reps: "8-12",
-        sets: "3",
-      },
-      {
-        name: "Sumo Squats",
-        videoUrl: "/videos/sumo_squat.mp4",
-        reps: "10-12",
-        sets: "3",
-      },
-      {
-        name: "Lunges",
-        videoUrl: "/videos/lunges.mp4",
-        reps: "12-15",
-        sets: "3",
-      },
-      {
-        name: "Romanian Deadlifts (RDLs)",
-        videoUrl: "/videos/rdls.mp4",
+        videoUrl: "/squats.mp4",
         reps: "8-12",
         sets: "3",
       },
       {
         name: "Leg Extensions",
-        videoUrl: "/videos/leg_extension.mp4",
-        reps: "12-15",
+        videoUrl: "/extension.mp4",
+        reps: "10-12",
         sets: "3",
       },
       {
-        name: "Leg Curls",
-        videoUrl: "/videos/leg_curl.mp4",
+        name: "Hamstring Curl",
+        videoUrl: "/hamstringcurl.mp4",
         reps: "12-15",
         sets: "3",
       },
@@ -178,46 +160,104 @@ const WorkoutPage: React.FC = () => {
     "Shoulder Workout": [
       {
         name: "Shoulder Press",
-        videoUrl: "/videos/shoulder_press.mp4",
+        videoUrl: "/shoulderpress.mp4",
         reps: "10-12",
         sets: "3",
       },
-      {
-        name: "Face Pulls",
-        videoUrl: "/videos/face_pull.mp4",
-        reps: "12-15",
-        sets: "3",
-      },
+
       {
         name: "Lateral Raises",
-        videoUrl: "/videos/lateral_raise.mp4",
+        videoUrl: "/lateralraise.mp4",
         reps: "12-15",
         sets: "3",
       },
       {
-        name: "Front Raises",
-        videoUrl: "/videos/front_raise.mp4",
+        name: "Rear Delt Fly",
+        videoUrl: "/reardeltfly.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Upright Row",
+        videoUrl: "/uprightrow.mp4",
         reps: "12-15",
         sets: "3",
       },
       {
         name: "Shrugs",
-        videoUrl: "/videos/shrugs.mp4",
+        videoUrl: "/shrugs.mp4",
         reps: "15-20",
         sets: "3",
       },
     ],
     "Abs Workout": [
       {
-        name: "Crunches",
-        videoUrl: "/videos/crunches.mp4",
+        name: "Situps",
+        videoUrl: "/situps.mp4",
         reps: "15-20",
         sets: "3",
       },
       {
-        name: "Knee Raises",
-        videoUrl: "/videos/knee_raises.mp4",
+        name: "Lying Leg Raises",
+        videoUrl: "/lyingleg.mp4",
         reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Hanging Leg Raises",
+        videoUrl: "/hangingleg.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+    ],
+  };
+  const advancedWorkoutPlan: WorkoutPlan = {
+    "Advanced Chest Exercies": [
+      {
+        name: "Bar Dips",
+        videoUrl: "/bardips.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+    ],
+    "Advanced Triceps Workout": [
+      {
+        name: "Bench Dips",
+        videoUrl: "/dips.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+    ],
+    "Advanced Back Workout": [
+      {
+        name: "Pull Ups",
+        videoUrl: "/pullps.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+    ],
+    "Advanced Biceps Workout": [
+      {
+        name: "Spider Curl",
+        videoUrl: "/spidercurl.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+    ],
+    "Advanced Legs Workout": [
+      {
+        name: "Dead Lifts",
+        videoUrl: "/deadlifts.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+    ],
+
+    "Advanced Abs Workout": [
+      {
+        name: "Cable Crunches",
+        videoUrl: "/kneelcable.mp4",
+        reps: "8-12",
         sets: "3",
       },
     ],
@@ -237,11 +277,13 @@ const WorkoutPage: React.FC = () => {
   };
 
   return (
-    <div className="container font-montesrrat mx-auto p-4">
+    <div className="container font-montserrat mx-auto p-4">
       <h1 className="text-4xl font-bold text-center mb-8">Workout Plan</h1>
 
+      {/* Beginner Workouts Section */}
+      <h2 className="text-3xl font-bold text-center mb-4">Beginner Workouts</h2>
       <div className="space-y-6">
-        {Object.keys(workoutPlan).map((category) => (
+        {Object.keys(beginnerWorkoutPlan).map((category) => (
           <div key={category}>
             <button
               onClick={() => handleCategoryClick(category)}
@@ -252,10 +294,72 @@ const WorkoutPage: React.FC = () => {
 
             {selectedCategory === category && (
               <div className="mt-4 space-y-4">
-                {workoutPlan[category].map((exercise, index) => (
+                {beginnerWorkoutPlan[category].map((exercise, index) => (
                   <div
                     key={index}
-                    className="flex flex-col space-y-2 p-2 bg-gray-100 rounded-md shadow-sm"
+                    className="p-2 bg-gray-100 rounded-md shadow-sm"
+                  >
+                    <div className="flex justify-between items-center">
+                      <span className="text-xl">{exercise.name}</span>
+                      <button
+                        onClick={() => handleExerciseClick(exercise.name)}
+                        className="text-blue-600 hover:underline"
+                      >
+                        {selectedExercise === exercise.name
+                          ? "Close"
+                          : "View Exercise"}
+                      </button>
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      <span>Reps: {exercise.reps}</span> |{" "}
+                      <span>Sets: {exercise.sets}</span>
+                    </div>
+
+                    {selectedExercise === exercise.name && (
+                      <div className="mt-4 p-4 bg-black rounded-md">
+                        <Suspense fallback={<div>Loading video...</div>}>
+                          <ReactPlayer
+                            url={exercise.videoUrl}
+                            playing
+                            loop
+                            controls
+                            width="100%"
+                            height="auto"
+                          />
+                        </Suspense>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Advanced Workouts Section */}
+      <h2 className="text-3xl font-bold text-center mt-8 mb-4">
+        Advanced Workouts
+      </h2>
+      <p className="text-center text-gray-700 mb-4">
+        *You can add these exercises after 2-3 months of consistent workout.*
+      </p>
+      <div className="space-y-6">
+        {Object.keys(advancedWorkoutPlan).map((category) => (
+          <div key={category}>
+            <button
+              onClick={() => handleCategoryClick(category)}
+              className="w-full text-left text-2xl font-semibold py-2 px-4 bg-red-600 text-white rounded-md hover:bg-red-500"
+            >
+              {category}
+            </button>
+
+            {selectedCategory === category && (
+              <div className="mt-4 space-y-4">
+                {advancedWorkoutPlan[category].map((exercise, index) => (
+                  <div
+                    key={index}
+                    className="p-2 bg-gray-100 rounded-md shadow-sm"
                   >
                     <div className="flex justify-between items-center">
                       <span className="text-xl">{exercise.name}</span>
