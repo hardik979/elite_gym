@@ -22,20 +22,28 @@ const WorkoutPage: React.FC = () => {
         sets: "3",
       },
       {
-        name: "Incline Barbell Press",
-        videoUrl: "/incline.mp4",
-        reps: "8-12",
-        sets: "3",
-      },
-      {
         name: "Flat Barbell Press",
         videoUrl: "/barbellchest.mp4",
         reps: "8-12",
         sets: "3",
       },
       {
+        name: "Incline Barbell Press",
+        videoUrl: "/incline.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+
+      {
         name: "Decline Barbell Press",
         videoUrl: "/decline.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+
+      {
+        name: "Dumbbell Chest Press",
+        videoUrl: "/dumbchest.mp4",
         reps: "8-12",
         sets: "3",
       },
@@ -52,17 +60,12 @@ const WorkoutPage: React.FC = () => {
         sets: "3",
       },
       {
-        name: "Dumbbell Overhead Extensions",
-        videoUrl: "/dumbbeloverheadext.mp4",
-        reps: "8-12",
+        name: "Single Arm Tricep Extension",
+        videoUrl: "/singletri.mp4",
+        reps: "10-12",
         sets: "3",
       },
-      {
-        name: "Skull Crushers",
-        videoUrl: "/skull.mp4",
-        reps: "8-10",
-        sets: "3",
-      },
+
       {
         name: "Overhead Tricep Extension",
         videoUrl: "/overhtri.mp4",
@@ -70,14 +73,7 @@ const WorkoutPage: React.FC = () => {
         sets: "3",
       },
     ],
-
     "Day 2 : Back & Biceps": [
-      {
-        name: "Close Grip Lat PullDown",
-        videoUrl: "/closelat.mp4",
-        reps: "3 sets",
-        sets: "8 reps",
-      },
       {
         name: "Wide Grip Lat Pulldown",
         videoUrl: "/widelat.mp4",
@@ -128,7 +124,8 @@ const WorkoutPage: React.FC = () => {
         sets: "3",
       },
     ],
-    "Day 3 : Shoulders": [
+
+    "Day 3 : Shoulders & Legs": [
       {
         name: "Shoulder Press",
         videoUrl: "/shoulderpress.mp4",
@@ -160,8 +157,6 @@ const WorkoutPage: React.FC = () => {
         reps: "15-20",
         sets: "3",
       },
-    ],
-    "Day 4 : Legs": [
       {
         name: "Leg Press",
         videoUrl: "/legpress.mp4",
@@ -187,7 +182,174 @@ const WorkoutPage: React.FC = () => {
         sets: "3",
       },
     ],
+    "Day 4 : Chest & Triceps": [
+      {
+        name: "Push-Ups",
+        videoUrl: "/pushups.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Flat Barbell Press",
+        videoUrl: "/barbellchest.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Incline Barbell Press",
+        videoUrl: "/incline.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
 
+      {
+        name: "Decline Barbell Press",
+        videoUrl: "/decline.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+
+      {
+        name: "Dumbbell Chest Press",
+        videoUrl: "/dumbchest.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Pec Dec Fly",
+        videoUrl: "/pec.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Tricep Pushdown",
+        videoUrl: "/tripush.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Single Arm Tricep Extension",
+        videoUrl: "/singletri.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+
+      {
+        name: "Overhead Tricep Extension",
+        videoUrl: "/overhtri.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+    ],
+    "Day 5 : Back & Biceps": [
+      {
+        name: "Wide Grip Lat Pulldown",
+        videoUrl: "/widelat.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Lat Pull Over",
+        videoUrl: "/lattpulover.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "dumbell Row",
+        videoUrl: "/barbellbent.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+
+      {
+        name: "Bent Over Row",
+        videoUrl: "/bentover.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Cable Curl",
+        videoUrl: "/cablebic.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Hammer Curl",
+        videoUrl: "/hammer.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "barbell Curl",
+        videoUrl: "/barbellcurl.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Dumbbell Curl",
+        videoUrl: "/dumbbelcurl.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+    ],
+
+    "Day 6 : Shoulders & Legs": [
+      {
+        name: "Shoulder Press",
+        videoUrl: "/shoulderpress.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+
+      {
+        name: "Lateral Raises",
+        videoUrl: "/lateralraise.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Rear Delt Fly",
+        videoUrl: "/reardeltfly.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Upright Row",
+        videoUrl: "/uprightrow.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Shrugs",
+        videoUrl: "/shrugs.mp4",
+        reps: "15-20",
+        sets: "3",
+      },
+      {
+        name: "Leg Press",
+        videoUrl: "/legpress.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Squats",
+        videoUrl: "/squats.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Leg Extensions",
+        videoUrl: "/extension.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Hamstring Curl",
+        videoUrl: "/hamstringcurl.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+    ],
     "Abs Workout ": [
       {
         name: "Situps",
