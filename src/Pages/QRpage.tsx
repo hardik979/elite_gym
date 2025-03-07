@@ -1,8 +1,9 @@
 import QRCode from "react-qr-code";
 
 const QRCodePage = () => {
+  const baseURL = window.location.origin; // Detects your deployed URL
   const routes = [
-    { path: "/", label: "Workout 1" },
+    { path: "/", label: "Home" },
     { path: "/workout2", label: "Workout 2" },
     { path: "/workout3", label: "Workout 3" },
   ];
@@ -14,8 +15,8 @@ const QRCodePage = () => {
         {routes.map((route, index) => (
           <div key={index} className="p-4 border rounded-lg shadow-md">
             <h2 className="text-xl font-semibold mb-2"></h2>
-            <QRCode value={window.location.origin + route.path} size={150} />
-            <p className="text-sm text-gray-600 mt-2"></p>
+            <QRCode value={`${baseURL}${route.path}`} size={150} />
+            <p className="text-sm text-gray-600 mt-2">{`${baseURL}${route.path}`}</p>
           </div>
         ))}
       </div>
