@@ -12,66 +12,9 @@ interface WorkoutPlan {
   [key: string]: Exercise[];
 }
 
-const WorkoutPage: React.FC = () => {
+const WorkoutPage2: React.FC = () => {
   const beginnerWorkoutPlan: WorkoutPlan = {
-    "Day 1 : Chest & Triceps": [
-      {
-        name: "Push-Ups",
-        videoUrl: "/pushups.mp4",
-        reps: "8-12",
-        sets: "3",
-      },
-      {
-        name: "Incline Barbell Press",
-        videoUrl: "/incline.mp4",
-        reps: "8-12",
-        sets: "3",
-      },
-      {
-        name: "Flat Barbell Press",
-        videoUrl: "/barbellchest.mp4",
-        reps: "8-12",
-        sets: "3",
-      },
-      {
-        name: "Decline Barbell Press",
-        videoUrl: "/decline.mp4",
-        reps: "8-12",
-        sets: "3",
-      },
-      {
-        name: "Pec Dec Fly",
-        videoUrl: "/pec.mp4",
-        reps: "12-15",
-        sets: "3",
-      },
-      {
-        name: "Tricep Pushdown",
-        videoUrl: "/tripush.mp4",
-        reps: "10-12",
-        sets: "3",
-      },
-      {
-        name: "Dumbbell Overhead Extensions",
-        videoUrl: "/dumbbeloverheadext.mp4",
-        reps: "8-12",
-        sets: "3",
-      },
-      {
-        name: "Skull Crushers",
-        videoUrl: "/skull.mp4",
-        reps: "8-10",
-        sets: "3",
-      },
-      {
-        name: "Overhead Tricep Extension",
-        videoUrl: "/overhtri.mp4",
-        reps: "10-12",
-        sets: "3",
-      },
-    ],
-
-    "Day 2 : Back & Biceps": [
+    "Day 1 : Back & Biceps": [
       {
         name: "Close Grip Lat PullDown",
         videoUrl: "/closelat.mp4",
@@ -128,7 +71,89 @@ const WorkoutPage: React.FC = () => {
         sets: "3",
       },
     ],
-    "Day 3 : Shoulders": [
+    "Day 2 : Chest & Triceps": [
+      {
+        name: "Push-Ups",
+        videoUrl: "/pushups.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Incline Barbell Press",
+        videoUrl: "/incline.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Flat Barbell Press",
+        videoUrl: "/barbellchest.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Decline Barbell Press",
+        videoUrl: "/decline.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Pec Dec Fly",
+        videoUrl: "/pec.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Tricep Pushdown",
+        videoUrl: "/tripush.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Dumbbell Overhead Extensions",
+        videoUrl: "/dumbbeloverheadext.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Skull Crushers",
+        videoUrl: "/skull.mp4",
+        reps: "8-10",
+        sets: "3",
+      },
+      {
+        name: "Overhead Tricep Extension",
+        videoUrl: "/overhtri.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+    ],
+    "Day 3 : Legs": [
+      {
+        name: "Leg Press",
+        videoUrl: "/legpress.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+      {
+        name: "Squats",
+        videoUrl: "/squats.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Leg Extensions",
+        videoUrl: "/extension.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Hamstring Curl",
+        videoUrl: "/hamstringcurl.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+    ],
+    "Day 4 : Shoulders": [
       {
         name: "Shoulder Press",
         videoUrl: "/shoulderpress.mp4",
@@ -158,32 +183,6 @@ const WorkoutPage: React.FC = () => {
         name: "Shrugs",
         videoUrl: "/shrugs.mp4",
         reps: "15-20",
-        sets: "3",
-      },
-    ],
-    "Day 4 : Legs": [
-      {
-        name: "Leg Press",
-        videoUrl: "/legpress.mp4",
-        reps: "12-15",
-        sets: "3",
-      },
-      {
-        name: "Squats",
-        videoUrl: "/squats.mp4",
-        reps: "8-12",
-        sets: "3",
-      },
-      {
-        name: "Leg Extensions",
-        videoUrl: "/extension.mp4",
-        reps: "10-12",
-        sets: "3",
-      },
-      {
-        name: "Hamstring Curl",
-        videoUrl: "/hamstringcurl.mp4",
-        reps: "12-15",
         sets: "3",
       },
     ],
@@ -400,4 +399,4 @@ const WorkoutPage: React.FC = () => {
   );
 };
 
-export default WorkoutPage;
+export default WorkoutPage2;
