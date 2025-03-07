@@ -2,7 +2,7 @@ import QRCode from "react-qr-code";
 
 const QRCodePage = () => {
   const routes = [
-    { path: "/workout1", label: "Workout 1" },
+    { path: "/", label: "Workout 1" },
     { path: "/workout2", label: "Workout 2" },
     { path: "/workout3", label: "Workout 3" },
   ];

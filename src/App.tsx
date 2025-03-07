@@ -10,7 +10,7 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/workout1" element={<WorkoutPage />} />
+        <Route path="/" element={<WorkoutPage />} />
         <Route path="/workout2" element={<WorkoutPage2 />} />
         <Route path="/workout3" element={<WorkoutPage3 />} />
         <Route path="/qrcodes" element={<QRCodePage />} /> {/* QR Code Page */}
