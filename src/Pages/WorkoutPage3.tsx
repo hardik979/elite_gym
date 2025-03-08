@@ -43,18 +43,6 @@ const WorkoutPage3: React.FC = () => {
     ],
     "Day 2 : Biceps ": [
       {
-        name: "Cable Curl",
-        videoUrl: "/cablebic.mp4",
-        reps: "10-12",
-        sets: "3",
-      },
-      {
-        name: "Hammer Curl",
-        videoUrl: "/hammer.mp4",
-        reps: "10-12",
-        sets: "3",
-      },
-      {
         name: "barbell Curl",
         videoUrl: "/barbellcurl.mp4",
         reps: "10-12",
@@ -63,6 +51,24 @@ const WorkoutPage3: React.FC = () => {
       {
         name: "Dumbbell Curl",
         videoUrl: "/dumbbelcurl.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Cable Curl",
+        videoUrl: "/cablebic.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Preacher Curl",
+        videoUrl: "/preacher.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Hammer Curl",
+        videoUrl: "/hammer.mp4",
         reps: "10-12",
         sets: "3",
       },
@@ -110,21 +116,26 @@ const WorkoutPage3: React.FC = () => {
 
     "Day 4 : Triceps": [
       {
-        name: "Tricep Pushdown",
+        name: "Bar Tricep Pushdown",
         videoUrl: "/tripush.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Rope Tricep Pushdown",
+        videoUrl: "/ropetri.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Dumbbell Overhead Tricep Extension",
+        videoUrl: "/cabletri.mp4",
         reps: "10-12",
         sets: "3",
       },
       {
         name: "Single Arm Tricep Extension",
         videoUrl: "/singletri.mp4",
-        reps: "10-12",
-        sets: "3",
-      },
-
-      {
-        name: "Overhead Tricep Extension",
-        videoUrl: "/overhtri.mp4",
         reps: "10-12",
         sets: "3",
       },
@@ -136,7 +147,12 @@ const WorkoutPage3: React.FC = () => {
         reps: "10-12",
         sets: "3",
       },
-
+      {
+        name: "Barbell Shoulder Press",
+        videoUrl: "/barbellover.mp4",
+        reps: "10-12",
+        sets: "3",
+      },
       {
         name: "Lateral Raises",
         videoUrl: "/lateralraise.mp4",
@@ -165,17 +181,18 @@ const WorkoutPage3: React.FC = () => {
 
     "Day 6 : Legs": [
       {
-        name: "Leg Press",
-        videoUrl: "/legpress.mp4",
-        reps: "12-15",
-        sets: "3",
-      },
-      {
         name: "Squats",
         videoUrl: "/squats.mp4",
         reps: "8-12",
         sets: "3",
       },
+      {
+        name: "Leg Press",
+        videoUrl: "/legpress.mp4",
+        reps: "12-15",
+        sets: "3",
+      },
+
       {
         name: "Leg Extensions",
         videoUrl: "/extension.mp4",
