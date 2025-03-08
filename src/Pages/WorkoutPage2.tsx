@@ -28,6 +28,12 @@ const WorkoutPage2: React.FC = () => {
         sets: "3",
       },
       {
+        name: "Seated Row",
+        videoUrl: "/seatedrow.mp4",
+        reps: "8-12",
+        sets: "3",
+      },
+      {
         name: "dumbell Row",
         videoUrl: "/barbellbent.mp4",
         reps: "8-12",
@@ -124,7 +130,7 @@ const WorkoutPage2: React.FC = () => {
       },
       {
         name: "Dumbbell Overhead Tricep Extension",
-        videoUrl: "/cabletri.mp4",
+        videoUrl: "/dumbbeloverheadext.mp4",
         reps: "10-12",
         sets: "3",
       },
@@ -209,6 +215,12 @@ const WorkoutPage2: React.FC = () => {
         name: "Lat Pull Over",
         videoUrl: "/lattpulover.mp4",
         reps: "10-12",
+        sets: "3",
+      },
+      {
+        name: "Seated Row",
+        videoUrl: "/seatedrow.mp4",
+        reps: "8-12",
         sets: "3",
       },
       {
@@ -308,7 +320,7 @@ const WorkoutPage2: React.FC = () => {
       },
       {
         name: "Dumbbell Overhead Tricep Extension",
-        videoUrl: "/cabletri.mp4",
+        videoUrl: "/dumbbeloverheadext.mp4",
         reps: "10-12",
         sets: "3",
       },
