@@ -88,12 +88,7 @@ const WorkoutPage4: React.FC = () => {
         reps: "10-12",
         sets: "3",
       },
-      {
-        name: "Lat Pull Over",
-        videoUrl: "/lattpulover.mp4",
-        reps: "10-12",
-        sets: "3",
-      },
+
       {
         name: "Seated Row",
         videoUrl: "/seatedrow.mp4",
@@ -128,8 +123,8 @@ const WorkoutPage4: React.FC = () => {
         sets: "3",
       },
       {
-        name: "Cable Curl",
-        videoUrl: "/cablebic.mp4",
+        name: "Hammer Curl",
+        videoUrl: "/hammer.mp4",
         reps: "10-12",
         sets: "3",
       },
@@ -139,9 +134,10 @@ const WorkoutPage4: React.FC = () => {
         reps: "10-12",
         sets: "3",
       },
+
       {
-        name: "Hammer Curl",
-        videoUrl: "/hammer.mp4",
+        name: "Cable Curl",
+        videoUrl: "/cablebic.mp4",
         reps: "10-12",
         sets: "3",
       },
@@ -257,6 +253,12 @@ const WorkoutPage4: React.FC = () => {
         name: "Pull Ups",
         videoUrl: "/pullps.mp4",
         reps: "8-12",
+        sets: "3",
+      },
+      {
+        name: "Lat Pull Over",
+        videoUrl: "/lattpulover.mp4",
+        reps: "10-12",
         sets: "3",
       },
     ],
